@@ -1,19 +1,16 @@
 import { getPeople } from "./dataAccess.js"
 
-const authors = getPeople()
-
 const listAuthors = () => {
+    const authors = getPeople()
     
-    let html = "<ul>"
+    let html = ""
 
     const listItems = authors.map(author => {
-        return `<li>
-            <option value="${author.id}" author-email="${author.email}"> ${author.name}</options>
-        </li>`
+        return `<option id="${author.id}" data-email="${author.email}" name="author-name" value="${author.name}"> ${author.name}</options>`
     })
+    //  take off li elements, make select boxes render properly, google how to get selection from drop down
 
     html += listItems.join("")
-    html += "</ul>"
 
     return html
 }
@@ -21,8 +18,7 @@ const listAuthors = () => {
 export const Authors = () => {
     let html = `
     <div class="field">
-            <label class="label" for="authors">Author</label>
-            <select name="author-name" id="author-name">
+            <select name="authors" id="author-name">
             ${listAuthors()}
             </select>
         </div>
