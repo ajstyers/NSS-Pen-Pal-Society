@@ -6,18 +6,19 @@ const applicationState = {
 
 const mainContainer = document.querySelector("#container")
 
-const API = "./api/database.json"
+const API = "http://localhost:8088"
 
-export const fetchPeople = () => {
-    return fetch(`${API}/people`)
+export const fetchLetters = () => {
+    return fetch(`${API}/letters`)
         .then(response => response.json())
         .then(
-            (people) => {
+            (data) => {
                 // Store the external state in application state
-                applicationState.people = people
+                applicationState.letters = data
             }
         )
 }
+
 
 export const fetchTopics = () => {
     return fetch(`${API}/topics`)
@@ -30,16 +31,17 @@ export const fetchTopics = () => {
         )
 }
 
-export const fetchLetters = () => {
-    return fetch(`${API}/letters`)
+export const fetchPeople = () => {
+    return fetch(`${API}/people`)
         .then(response => response.json())
         .then(
-            (letters) => {
+            (people) => {
                 // Store the external state in application state
-                applicationState.letters = letters
+                applicationState.people = people
             }
         )
 }
+
 
 export const sendLetter = (userLetterInput) => {
     const fetchOptions = {
@@ -51,7 +53,7 @@ export const sendLetter = (userLetterInput) => {
     }
 
 
-    return fetch(`${API}`, fetchOptions)
+    return fetch(`${API}/letters`, fetchOptions)
         .then(response => response.json())
         .then(() => {
             mainContainer.dispatchEvent(new CustomEvent("stateChanged"));

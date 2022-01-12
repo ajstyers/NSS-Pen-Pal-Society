@@ -1,5 +1,5 @@
 import { ComposeLetterForm } from "./ComposeLetterForm.js"
-import { fetchLetters } from "./SentLetters.js"
+import { sentLetters } from "./SentLetters.js"
 
 export const PenPals = () => {
     return `
@@ -11,8 +11,7 @@ export const PenPals = () => {
 
         <article class="sentLetters">
             <h2 class="smallTitle">Letters</h2>
-            ${fetchLetters()}
+            ${sentLetters()}
         </article>
     `
 }
-
