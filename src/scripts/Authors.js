@@ -8,8 +8,7 @@ const listAuthors = () => {
     const listItems = authors.map(author => {
         return `<option id="${author.id}" data-email="${author.email}" name="author-name" value="${author.name}"> ${author.name}</options>`
     })
-    //  take off li elements, make select boxes render properly, google how to get selection from drop down
-
+    
     html += listItems.join("")
 
     return html

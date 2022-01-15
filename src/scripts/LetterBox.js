@@ -1,7 +1,7 @@
 export const letterBox = () => {
     let html = `
         <div class="field">
-            <input type="text" name="letter-text" class="input" />
+            <textarea name="letter-text" class="input_field"></textarea>
         </div>
     `
     return html
