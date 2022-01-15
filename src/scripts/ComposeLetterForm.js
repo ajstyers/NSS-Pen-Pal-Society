@@ -7,26 +7,26 @@ import { Recipients } from "./Recipients.js"
 export const ComposeLetterForm = () => {
     return `
         <article class="letterForm">
-            <section class="authors drop_down">
-                <h2>Author</h2>
+            <section class="authors drop_down sectionBox">
+                <h2 class="smallTitle">Author</h2>
                 ${Authors()}
             </section>
-            <section class="letter type_box">
-                <h2>Letter</h2>
+            <section class="letter type_box sectionBox">
+                <h2 class="smallTitle">Letter</h2>
                 ${letterBox()}
             </section>
-            <section class="topics radio_button">
-                <h2>Topics</h2>
+            <section class="topics radio_button sectionBox">
+                <h2 class="smallTitle">Topics</h2>
                 ${Topics()}
             </section>
-            <section class="recepients drop_down">
-                <h2>Recipient</h2>
+            <section class="recepients drop_down sectionBox">
+                <h2 class="smallTitle">Recipient</h2>
                 ${Recipients()}
             </section>
         </article>
 
         <article>
-            <button id="sendLetter">Send Letter</button>
+            <button class="press_me" id="sendLetter">Send Letter</button>
         </article>
         `
 }

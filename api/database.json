@@ -53,5 +53,30 @@
       "type": "Condolences"
     }
   ],
-  "letters": []
+  "letters": [
+    {
+      "author": "Allison",
+      "letter_body": "Tell me, O Muse, of the man of many devices, who wandered full many ways after he had sacked the sacred citadel of Troy. Many were the men whose cities he saw and whose mind he learned, aye, and many the woes he suffered in his heart upon the sea, seeking to win his own life and the return of his comrades.",
+      "topic": "Family",
+      "recipient": "Hayat",
+      "emailAddress": "allison@penpal.com",
+      "id": 1
+    },
+    {
+      "author": "Trevor",
+      "letter_body": "Sing, Goddess, Achilles' rage, black and murderous, that cost the Greeks incalculable pain, pitched countless souls of heroes into Hades' dark, and left their bodies to rot as feasts for dogs and birds.",
+      "topic": "Business",
+      "recipient": "Chaneice",
+      "emailAddress": "trevor@penpal.com",
+      "id": 2
+    },
+    {
+      "author": "Asher",
+      "letter_body": "I went down yesterday to the Peiraeus with Glaucon, the son of Ariston, to pay my devotions to the Goddess, and also because I wished to see how they would conduct the festival since this was its inauguration. I thought the procession of the citizens very fine, but it was no better than the show, made by the marching of the Thracian contingent.",
+      "topic": "Business",
+      "recipient": "Marcus",
+      "emailAddress": "asher@penpal.com",
+      "id": 3
+    }
+  ]
 }

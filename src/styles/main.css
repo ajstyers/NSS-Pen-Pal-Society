@@ -16,6 +16,7 @@ textarea {
 
 body {
     background-color: rgb(245, 245, 245);
+    width: 97%;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -28,6 +29,7 @@ ul {
     padding-inline-start: 0.75rem;
 }
 
+/*
 #purchase {
     margin: 1rem 0 2rem 2rem;
     padding: 0.5rem;
@@ -35,16 +37,156 @@ ul {
     color: rgb(230, 220, 255);
     font-size: 1rem;
 }
+*/
 
-.header {
-    display: flex;
+.headerMain {
+    color: rgb(41, 40, 39);
+    width: 97vw;
 }
 
 .logo {
     max-height: 4rem;
 }
 
-.title {
-    text-align: center;
-    margin: 1rem 0 3rem 2rem;
+.titleMain{
+    margin-left: 5vw;
+    margin-right: auto;
+}
+
+.smallTitle {
+    padding: 0.75rem 1rem 0.5rem 0.5rem;
+}
+
+.smallLettersTitle{
+    margin-left: 5vw;
+    margin-right: auto;
+}
+
+.letterForm{
+    display: flex;
+    width: 65vw;
+    min-width:fit-content;
+    background-color: darkolivegreen;;
+    padding: 0.3rem;
+    margin-left: 1vw;
+    margin-right: auto;
+    justify-content: space-between;
+
+}
+
+.sectionBox{
+    flex: wrap;
+    flex-wrap:wrap;
+    flex-direction: column;
+    background-color: rgb(184, 201, 155);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+    width: fit-content;
+    height: fit-content;
+    justify-content: space-between;
+    
+}
+
+.drop_down{
+    flex: nowrap;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+
+}
+
+.radio_button{
+    flex: nowrap;
+    justify-content: flex-start;
+    width: 300px;
+
+}
+
+.type_box{
+    flex: wrap;
+    justify-content: flex-start;
+    width: 200px;
+    padding-bottom: 0.7rem;
+    padding-left: 0.5rem;
+    padding-right: 0.7rem;
+
+}
+
+.press_me{
+    background-color: rgb(184, 201, 155);
+    color: darkolivegreen;
+    margin-left: 1vw;
+    margin-right: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.indivLetters{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1vw;
+    margin-right: auto;
+    justify-content: flex-start;
+    padding: 0.25rem;
+    background-color: rgb(184, 201, 155);
+    width: 90vw;
+    height: fit-content;
+    
+    
+}
+
+.letterFromUser{
+    flex: wrap;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: darkolivegreen;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 1rem;
+    width: 250px;
+    height: fit-content;
+}
+
+.userLetter{
+    color:rgba(245, 245, 245, 0.644);
+    padding: 1px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#letTo{
+    font-size: medium;
+    color:rgba(245, 245, 245, 0.801);
+}
+#letFrom{
+    font-size: medium;
+}
+#letTopic{
+    font-size: small;
+    font-weight: bold;
+    color:rgba(16, 12, 43, 0.329);
+}
+#letBody{
+    font-size: large;
+    font-style: italic;
+    color:rgb(16, 12, 43);
+}
+
+/* text area / html tag */
+.input_field{
+    text-overflow: wrap;
+    text-overflow: break-word;
+    width: 97%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -3,15 +3,17 @@ import { sentLetters } from "./SentLetters.js"
 
 export const PenPals = () => {
     return `
-        <header class="header">
-            <h1 class="title">Pen Pal Society</h1>
+        <header class="headerMain">
+            <h1 class="titleMain">Pen Pal Society</h1>
         </header>
 
         ${ComposeLetterForm()}
 
         <article class="sentLetters">
-            <h2 class="smallTitle">Letters</h2>
-            ${sentLetters()}
+            <h2 class="smallLettersTitle">Letters</h2>
+            <article class="indivLetters">
+                ${sentLetters()}
+            </article>
         </article>
     `
 }
