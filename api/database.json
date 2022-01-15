@@ -77,6 +77,14 @@
       "recipient": "Marcus",
       "emailAddress": "asher@penpal.com",
       "id": 3
+    },
+    {
+      "author": "Asher",
+      "letter_body": "Dear Allison,\nI love your cat so much. She is so fat and sweet and I love seeing her hang around you during class. I am reaching out to let you know I will be stealing her from you on January 29 at approximately 4:06 pm, depending on traffic.  Let me know her favorite treats at your earliest convenience so that I can spoil her once she is mine.",
+      "topic": "Friendly",
+      "recipient": "Allison",
+      "emailAddress": "asher@penpal.com",
+      "id": 4
     }
   ]
 }
